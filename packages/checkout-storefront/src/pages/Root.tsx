@@ -50,7 +50,7 @@ export const Root = ({ env }: RootProps) => {
 
   if (!saleorApiUrl) {
     console.warn(`Missing "saleorApiUrl" query param!`);
-    return "/default-channel/en-US/";
+    return null;
   }
   if (!saleorClient) {
     console.warn(`Couldn't create saleor client!`);
