@@ -60,7 +60,7 @@ export const Root = ({ env }: RootProps) => {
     console.warn(`Couldn't create URQL client!`);
     return null;
   }
-  console.log("saleorApiUrlsaleorApiUrl", saleorApiUrl);
+
   return (
     // @ts-ignore React 17 <-> 18 type mismatch
     <SaleorProvider client={saleorClient}>
