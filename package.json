@@ -31,6 +31,9 @@
     "cy:run": "cypress run",
     "cy:open": "cypress open"
   },
+  "dependencies": {
+    "next": "13.0.0"
+  },
   "devDependencies": {
     "cypress": "10.11.0",
     "env-cmd": "10.1.0",
