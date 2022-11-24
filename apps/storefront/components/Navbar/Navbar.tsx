@@ -20,7 +20,6 @@ import { invariant } from "@apollo/client/utilities/globals";
 export function Navbar() {
   const paths = usePaths();
   const router = useRouter();
-
   const [isBurgerOpen, setBurgerOpen] = useState(false);
   const { authenticated } = useAuthState();
   const { checkout } = useCheckout();
@@ -46,7 +45,7 @@ export function Navbar() {
   const externalCheckoutUrl = checkout ? `/checkout/?${checkoutParams.toString()}` : "#";
 
   useEffect(() => {
-    // Close side menu after changing the page
+    // Close side menu after changing the  page
     router.events.on("routeChangeStart", () => {
       if (isBurgerOpen) {
         setBurgerOpen(false);
